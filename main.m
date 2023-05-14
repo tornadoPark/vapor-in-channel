@@ -1,5 +1,5 @@
-clear all
-close all
+% clear all
+% close all
 
 global dt
 global dx
@@ -36,7 +36,7 @@ global n
 
 global ventTime
 %%%%%%%%%%%%%%% heat flux of this simulation
-q = 4e5;
+q = 3.4e5;
 %%%%%%%%%%%%%%%
 
 lTot = 7.2e-3;
@@ -217,6 +217,6 @@ for n = 2 : 15000
     
 end
 
-% valuesOfConcern
-% figuresOfConcern
+valuesOfConcern
+figuresOfConcern
 
