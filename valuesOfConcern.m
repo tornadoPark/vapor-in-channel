@@ -9,3 +9,4 @@ pMax = max(p)
 % uMean = max(l)/find(l==max(l))
 
 % a test for branch
+% this is the branch of heat flux
