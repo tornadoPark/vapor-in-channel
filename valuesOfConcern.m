@@ -7,3 +7,5 @@ lMax = max(l)
 pMax = max(p)
 
 % uMean = max(l)/find(l==max(l))
+
+% here is the branch of geom
