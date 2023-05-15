@@ -67,8 +67,8 @@ iota = 0.013399;                % temperature scale over sat temperature, 5/373.
 epsilon = 9.26e-3;              % curvature radius over total length, contact angle = 50 degree
 xi = RB/lTot;
 
-lambdaL = 681 * 1e-3;           % physical properties
-hFG = 2180570.606;          
+          
+hFG = 2180570.606;              % physical properties
 muL = 0.000223904;
 muG = 1.3167e-5;
 rhoL = 936.58;
