@@ -31,7 +31,7 @@ dmdtEvap = dmdtEvap * coeffManualEvap;
 
 
 coeffManualVent = 1;
-ventTime = 2e-4;
+ventTime = 4e-4;
 if n*dt*tScale < ventTime
 	dmdtVent = 0;
 else

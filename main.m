@@ -1,5 +1,5 @@
-% clear all
-% close all
+clear all
+close all
 
 global dt
 global dx
@@ -36,7 +36,7 @@ global n
 
 global ventTime
 %%%%%%%%%%%%%%% heat flux of this simulation
-q = 3.4e5;
+q = 4.24e5;
 %%%%%%%%%%%%%%%
 
 lTot = 7.2e-3;
@@ -50,7 +50,7 @@ K = 8.33e-10;                   % permeability CFD
 % epsilon^2 * lTot^2 / 8 ;      % permeability circle tube analytical solution 
 
 
-AH = 0.025 * A;                 % horizotal geom parameters
+AH = 0.02 * A;                 % horizotal geom parameters
 lH = 0.5 * lTot;
 KH = 1 * K;
 RB = 3e-3;                      % radius of attached bubble
@@ -168,6 +168,10 @@ for n = 2 : 15000
         disp('length break')
         disp(l(n+1))
         break;
+    end
+    
+    if n == 4700
+        break
     end
     
     

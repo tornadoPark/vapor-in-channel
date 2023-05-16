@@ -5,6 +5,7 @@
 totalTime = dt*length(l)*tScale
 lMax = max(l)
 pMax = max(p)
+HTC_final = q/(thetaWSave(1,end)*ThetaScale+100-92)
 
 % uMean = max(l)/find(l==max(l))
 

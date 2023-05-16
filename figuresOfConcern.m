@@ -111,5 +111,16 @@ x = ceil(ventTime/tScale/dt)*ones(1,length(y));
 plot(x,y)
 hold off
 
-% just a test for github
+figure
+hold on
+for i = 1:100
+    if i*1000 < n
+        plot(thetaWSave(:,i*1000))
+    else 
+        break
+    end
+end
+
+
+hold off
 
