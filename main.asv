@@ -35,16 +35,11 @@ global rhoL
 global n
 
 global ventTime
-global deltaTempInExp
-global h
-
 %%%%%%%%%%%%%%% heat flux of this simulation
 q = 3.4e5;
-h = 36637;
 %%%%%%%%%%%%%%% tuanble parameters
-ventTime = 3e-4;
-AHFactor = 0.020;
-deltaTempInExp = 12; % temperature from expei, 92 + xx
+ventTime = 4e-4;
+AHFactor = 0.025;
 %%%%%%%%%%%%%%%
 
 %% set geometery parameters
@@ -161,8 +156,7 @@ dmdtVentSave = [];
 deltaSave = [];
 thetaWSave = [];
 dudt = [];
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 for n = 2 : 15000
     n
@@ -179,7 +173,12 @@ for n = 2 : 15000
         disp(l(n+1))
         break;
     end
-     
+    
+    if n == 4700
+        break
+    end
+    
+    
     % solve Theta
     Theta(n+1) = getTheta(p(n));
     % Theta(n+1) = Theta(1);

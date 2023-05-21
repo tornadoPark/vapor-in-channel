@@ -6,10 +6,13 @@ global AHeat
 global lambdaS
 global lTot
 
+global h
+global deltaTempInExp
+
 % h = 82050; % from RTDs in porous zone, too high compared with experi value (30000 ~ 40000)
 % h = 36638; % from experi # 600, q = 3.4e5
-h = 37957.5;
-deltaTempInExp = 12; % temperature from experi
+% h = 36637;
+% deltaTempInExp = 10; % temperature from expei, 92+12 = 104
 m = sqrt(h*CHeat/lambdaS/AHeat);
 thetaFinBase = deltaTempInExp; % temp in analytical solution is the excess one, not the dimensionless one
 
