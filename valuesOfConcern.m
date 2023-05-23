@@ -11,3 +11,21 @@ HTC_final = q/(thetaWSave(1,end)*ThetaScale+100-92)
 
 lNon = l';
 pDim = (p*pScale)';
+deltaBotDim = (deltaSave(:,1)*deltaScale);
+
+% timeStep = [];
+% i = 1;
+% for time = 1:2:7
+%     timeStep(i) = floor(time*1e-3/dt/tScale);
+%     i = i+1;
+% end
+% 
+% %% delta v.s. time
+% flag = timeStep(2);
+% temp = deltaSave(flag,:);
+% temp(find(temp > 2)) =[];
+% temp = deltaScale*temp';
+%     
+% %% temperature v.s. time
+% flag = timeStep(1);
+% temp = thetaWSave(:,flag);

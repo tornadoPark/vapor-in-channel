@@ -42,8 +42,8 @@ global h
 q = 3.4e5;
 h = 36637;
 %%%%%%%%%%%%%%% tuanble parameters
-ventTime = 4e-4;
-AHFactor = 0.02;
+ventTime = 1e-4;
+AHFactor = 0.021;
 deltaTempInExp = 11.5; % temperature from expei, 92 + xx
 %%%%%%%%%%%%%%%
 
