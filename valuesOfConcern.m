@@ -9,5 +9,5 @@ HTC_final = q/(thetaWSave(1,end)*ThetaScale+100-92)
 
 % uMean = max(l)/find(l==max(l))
 
-% a test for branch
-% this is the branch of heat flux
+lNon = l';
+pDim = (p*pScale)';

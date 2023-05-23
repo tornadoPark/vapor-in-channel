@@ -42,9 +42,9 @@ global h
 q = 3.4e5;
 h = 36637;
 %%%%%%%%%%%%%%% tuanble parameters
-ventTime = 3e-4;
-AHFactor = 0.020;
-deltaTempInExp = 12; % temperature from expei, 92 + xx
+ventTime = 4e-4;
+AHFactor = 0.02;
+deltaTempInExp = 11.5; % temperature from expei, 92 + xx
 %%%%%%%%%%%%%%%
 
 %% set geometery parameters
@@ -105,7 +105,7 @@ dx = 1/NoNodes;                 % non-dimension total length = 1
 %% initialization
 p(1) = 0.106 *1e6/pScale;       % how to determine?
 
-l(1) = 0.03; 
+l(1) = 0.02456; 
 %p(2) = 0.95*p(1);% actually, p2/p1 = (2*l1 - u2*dt)/l1, but it isn't so necessary, we can try different p2/p1 to fit the u1 in experiments
 u2 = 1.5e-3;                    % non-dimension velocity
 
