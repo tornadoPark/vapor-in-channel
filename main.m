@@ -39,12 +39,12 @@ global deltaTempInExp
 global h
 
 %%%%%%%%%%%%%%% heat flux of this simulation
-q = 5.2e5;
-h = 40901;
+q = 6.95e5;
+h = 42261;
 %%%%%%%%%%%%%%% tuanble parameters
-ventTime = 0.5e-4;
-AHFactor = 0.03;
-deltaTempInExp = 12; % temperature from expei, 92 + xx
+ventTime = 1.5e-4;
+AHFactor = 0.035;
+deltaTempInExp = 14; % temperature from expei, 92 + xx
 %%%%%%%%%%%%%%%
 
 %% set geometery parameters
@@ -108,6 +108,7 @@ p(1) = 0.106 *1e6/pScale;       % how to determine?
 l(1) = 0.049; 
 %p(2) = 0.95*p(1);% actually, p2/p1 = (2*l1 - u2*dt)/l1, but it isn't so necessary, we can try different p2/p1 to fit the u1 in experiments
 u2 = 1.5e-3;                    % non-dimension velocity
+% u2 = 2e-3; % 为了q=6.95e5(10V)特意调的
 
 p(2) = p(1) * (l(1) - u2*dt)/l(1);                      % determined by the equation 
 l(2) = (2*l(1)*p(1) - l(1)*p(2))/p(1);                  % as above 
